@@ -28,7 +28,7 @@ class Manga(models.Model):
 
 
 class Comments(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    user = models.ForeignKey(RegisteredUsers, on_delete=models.CASCADE)
     title = models.ForeignKey(Manga, on_delete=models.CASCADE, related_name='comments')
     text = models.TextField()
 

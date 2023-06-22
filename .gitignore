@@ -81,4 +81,4 @@ static
 \migrations
 /.idea
 command.sh
-Безымянный.png
+db.sqlite3
